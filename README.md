@@ -1,0 +1,2 @@
+# game (a hand game)
+ It is a hand game, usually play between two people, in which each player simultaneously indicates a number 1-5 with their finger. The beginning of the game the players make a deal about how they start to count. There are two choices; starting from a small number or starting from a high number. Both of their numbers  add up and start to count from one to the end of the number between both of them.  On which player the last number stops, it  shows the winner. 
