@@ -1,2 +1,85 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import random, sys
+
+print(""" 
+Welcome to 'a Hand Game'.
+Choose game's rule
+\tStart from a small number: "S"
+\tStart from a high number:  "H"
+\tIf you want to leave game: "Q"
+""",)
+while True:
+    rule= input("\nEnter your choice: "). lower()
+    
+    if  rule=='q':
+        print ("Good bye.")
+        break
+        #sys.exit()
+
+    elif rule=="s":
+        print("Game will be star a small number.\nChose your number between 1-5.\nIf you want to cahnege game's rule enter: 0")
+        while True:
+            com_m=random.randint(1,5) #computer_move
+            player_m=int(input("\nEnter your number: ")) #player_move
+            total= player_m + com_m
+
+            youWin="Your number is {} and computer's number is {}. You win!".format(player_m, com_m)
+            computerWin= "Your number is {} and computer's number is {}. Computer win!".format(player_m, com_m)
+            tie= "Your number is {} and computer's number is {}. It is a tie!".format(player_m, com_m)
+
+            if player_m== 0:
+                break
+               
+            elif player_m<6:
+                if player_m > com_m: 
+                    if total%2==0:
+                        print(youWin)
+                    else:
+                        print(computerWin)
+
+                elif player_m < com_m:
+                    if total%2==0:
+                        print(computerWin)
+                    else:
+                        print(youWin)
+
+                elif player_m == com_m:
+                    print(tie)
+
+            else:
+                print("Be carefull! You should enter a number between 1-5!")
+
+    elif rule=='h':
+        print("Game will be start a high number.\nChose your number between 1-5.\nIf you want to cahnege game's rule enter: 0")
+        while True:
+            com_m=random.randint(1,5) #computer_move
+            player_m=int(input("\nEnter your number: ")) #player_move
+            total= player_m + com_m
+
+            youWin="Your number is {} and computer's number is {}. You win!".format(player_m, com_m)
+            computerWin= "Your number is {} and computer's number is {}. Computer win!".format(player_m, com_m)
+            tie= "Your number is {} and computer's number is {}. It is a tie!".format(player_m, com_m)
+
+            if player_m== 0:
+                break
+               
+            elif player_m<6:
+                if player_m > com_m: 
+                    if total%2==0:
+                        print(computerWin)
+                    else:
+                        print(youWin)
+
+                elif player_m < com_m:
+                    if total%2==0:
+                        print(youWin)
+                    else:
+                        print(computerWin)
+
+                elif player_m == com_m:
+                    print(tie)
+
+            else:
+                print("Be carefull! You should enter a number between 1-5!")
+
+    else:
+        print ("Be sure you entered correct letter!")
