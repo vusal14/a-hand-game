@@ -3,8 +3,8 @@ It is a hand game, usually play between two people, in which each player simulta
 
 For instance,
 Rule: game starts from a small number.
-Player 1 chooses 4 and Player2 chooses 5. (4+5=9) We start from Player1, because he chooses a small number. If we count from 1 to 9 between Player1 and Player2, we see that Player 1 wins.
+Player1 chooses 4 and Player2 chooses 5. (4+5=9) We start from Player1, because he chooses a small number. If we count from 1 to 9 between Player1 and Player2, we see that Player1 wins.
 
 Rule: game starts from a high number.
-Player 1 chooses 4 and Player 2 chooses 5. (4+5=9) We start from Player2, because he chooses a high number. If we count from 1 to 9 between Player2 and Player1, we see that Player 2 wins.
+Player1 chooses 4 and Player2 chooses 5. (4+5=9) We start from Player2, because he chooses a high number. If we count from 1 to 9 between Player2 and Player1, we see that Player2 wins.
 
